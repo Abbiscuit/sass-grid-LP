@@ -1,0 +1,9 @@
+@import '../../globa-styles.scss';
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding: $padding;
+  display: block;
+  text-transform: uppercase;
+}

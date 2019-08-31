@@ -1,0 +1,24 @@
+// Multiple Colors Variables
+$colors: (
+  primary: #005dff,
+  primary-light: lighten(#005dff, 40%),
+  primary-dark: darken(#005dff, 40%),
+  accent: #fff6bb
+);
+
+$padding: 15px;
+$borders: 15px;
+
+// Functions
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
+
+// mixin
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

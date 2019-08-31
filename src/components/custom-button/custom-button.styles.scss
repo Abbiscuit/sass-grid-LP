@@ -1,0 +1,19 @@
+@import '../../globa-styles.scss';
+
+.custom-button {
+  color: color(primary-dark);
+  border-radius: $borders;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: color(accent);
+  display: block;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  padding: $padding;
+
+  @include desktop {
+    display: inline-block;
+    padding: $padding $padding * 4;
+  }
+}
